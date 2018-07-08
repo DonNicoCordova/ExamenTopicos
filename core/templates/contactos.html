@@ -29,38 +29,10 @@
                                 <th scope="row">{{contacto.pk}}</th>
                                 <td>{{contacto.nombre}}</td>
                                 <td>{{contacto.apellido}}</td>
-                                <td>{{contacto.telefono}}</td>
+                                <td>+{{contacto.telefono}}</td>
                                 <td><a href='{% url "detalles_contacto" contacto.pk %}' class="btn btn-primary"><i class="fa fa-eye"></i> Ver Detalle</a></td>
                             </tr>
-                            {% endfor %}                            
-                            <tr>
-                                <th scope="row">2</th>
-                                <td>Jacob</td>
-                                <td>Thornton</td>
-                                <td>@fat</td>
-                                <td><a href='{% url "detalles_contacto" %}' class="btn btn-primary"><i class="fa fa-eye"></i> Ver Detalle</a></td>
-                            </tr>
-                            <tr>
-                                <th scope="row">3</th>
-                                <td>Larry</td>
-                                <td>the Bird</td>
-                                <td>@twitter</td>
-                                <td><a href='{% url "detalles_contacto" %}' class="btn btn-primary"><i class="fa fa-eye"></i> Ver Detalle</a></td>
-                            </tr>
-                            <tr>
-                                <th scope="row">3</th>
-                                <td>Larry</td>
-                                <td>the Bird</td>
-                                <td>@twitter</td>
-                                <td><a href='{% url "detalles_contacto" %}' class="btn btn-primary"><i class="fa fa-eye"></i> Ver Detalle</a></td>
-                            </tr>
-                            <tr>
-                                <th scope="row">3</th>
-                                <td>Larry</td>
-                                <td>the Bird</td>
-                                <td>@twitter</td>
-                                <td><a href='{% url "detalles_contacto" %}' class="btn btn-primary"><i class="fa fa-eye"></i> Ver Detalle</a></td>
-                            </tr>
+                            {% endfor %}
                         </tbody>
                     </tbody>
                 </table>

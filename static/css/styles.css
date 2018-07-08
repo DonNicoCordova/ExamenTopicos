@@ -18,15 +18,10 @@
     max-width:40%;
 }
 footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color:#231f1e;
-    color: white;
-    text-align: center;
-    border-top: 0.3rem solid #221f1d !important;
- }
+    position:absolute;
+    bottom:0;
+    width:100%;
+}
 
 .border-primary {
     border-color: #007bff !important;

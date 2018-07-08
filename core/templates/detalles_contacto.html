@@ -11,10 +11,10 @@
                     <div class="text-left">
                         <h4>Información de contacto: </h4>
                         <ul>
-                            <li><strong>Nombre:</strong> Miguel Cantillana</li>
-                            <li><strong>Email:</strong> <a>miguel@ewok.cl</a></li>
-                            <li><strong>Tel:</strong> +56 9 82029024</li>
-                            <li><strong>Dirección:</strong> Av. lo cruzat 0110, casa 69</li>
+                            <li><strong>Nombre:</strong> {{contacto.nombre}}</li>
+                            <li><strong>Email:</strong> <a>{{contacto.email}}</a></li>
+                            <li><strong>Tel:</strong> +{{contacto.telefono}}</li>
+                            <li><strong>Dirección:</strong> {{contacto.direccion}}</li>
                         </ul>
                     </div>
                 </div>
@@ -39,7 +39,7 @@
         </div>
         <div class="col-sm-12 col-md-4">
             <div class="centrar embed-responsive embed-responsive-1by1">
-                <iframe class="embed-responsive-item" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBbWwjC3RpXGo1te8SZhKmUAyeK28PlLy4&q=Av. Salvador 1843, Santiago" allowfullscreen></iframe>
+                <iframe class="embed-responsive-item" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBbWwjC3RpXGo1te8SZhKmUAyeK28PlLy4&q={{contacto.direccion}}" allowfullscreen></iframe>
             </div>
         </div>
     </div>
