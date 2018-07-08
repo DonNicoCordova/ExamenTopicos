@@ -13,6 +13,10 @@
     margin-right:auto;
 }
 
+.index-logo {
+    height:auto;
+    max-width:40%;
+}
 footer {
     position: fixed;
     left: 0;

@@ -24,13 +24,15 @@
                     </thead>
                     <tbody>
                         <tbody>
+                            {% for contacto in contactos %}
                             <tr>
-                                <th scope="row">1</th>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                                <td>@mdo</td>
-                                <td><a href='{% url "detalles_contacto" %}' class="btn btn-primary"><i class="fa fa-eye"></i> Ver Detalle</a></td>
+                                <th scope="row">{{contacto.pk}}</th>
+                                <td>{{contacto.nombre}}</td>
+                                <td>{{contacto.apellido}}</td>
+                                <td>{{contacto.telefono}}</td>
+                                <td><a href='{% url "detalles_contacto" contacto.pk %}' class="btn btn-primary"><i class="fa fa-eye"></i> Ver Detalle</a></td>
                             </tr>
+                            {% endfor %}                            
                             <tr>
                                 <th scope="row">2</th>
                                 <td>Jacob</td>

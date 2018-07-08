@@ -13,7 +13,9 @@ def contactos(request):
     data["contactos"] = contactos
     return render(request,template_name,data) 
 
-def detalles_contacto(request):
+def detalles_contacto(request,pk):
     data = {}
+    contacto = Contacto.objects.get(pk=pk)
+    data['contacto'] = contacto
     template_name = 'detalles_contacto.html'
     return render(request,template_name,data) 
