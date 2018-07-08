@@ -1,3 +1,6 @@
+body {
+    height: calc(100vh - 100px);
+  }
 .logo {
     margin-right: 0px;
 }
@@ -16,11 +19,6 @@
 .index-logo {
     height:auto;
     max-width:40%;
-}
-footer {
-    position:absolute;
-    bottom:0;
-    width:100%;
 }
 
 .border-primary {
