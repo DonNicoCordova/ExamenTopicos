@@ -5,6 +5,7 @@ from core.views import *
 
 urlpatterns = [
     path('', Index, name='index'),
-    path('contactos/',contactos,name="contactos")
+    path('contactos/',contactos,name="contactos"),
+    path('detalles_contacto/',detalles_contacto,name="detalles_contacto"),
 
 ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

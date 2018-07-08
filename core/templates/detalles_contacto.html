@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <div class="row">
+        <div class="col-sm-12 col-md-4 text-center">
+            <img class="img-fluid img-thumbnail" src="{% static 'placeholder2.png' %}" alt="">
+        </div>
+        <div class="col-sm-12 col-md-4">
+            <div class="row">
+                <div class="col-sm-12 col-md-12 pt-3">
+                    <div class="text-left">
+                        <h4>Información de contacto: </h4>
+                        <ul>
+                            <li><strong>Nombre:</strong> Miguel Cantillana</li>
+                            <li><strong>Email:</strong> <a>miguel@ewok.cl</a></li>
+                            <li><strong>Tel:</strong> +56 9 82029024</li>
+                            <li><strong>Dirección:</strong> Av. lo cruzat 0110, casa 69</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-12">
+                    <h4>Formulario de contacto</h4>
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Nombre</label>
+                            <input type="text" class="form-control" id="name" placeholder="Ingrese su nombre">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Ingrese su email">
+                        </div>
+                        <div class="form-group">
+                            <textarea type="checkbox" class="form-control" id="mensaje"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary ml-auto float-right">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-4">
+            <div class="centrar embed-responsive embed-responsive-1by1">
+                <iframe class="embed-responsive-item" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBbWwjC3RpXGo1te8SZhKmUAyeK28PlLy4&q=Av. Salvador 1843, Santiago" allowfullscreen/>
+            </div>
+        </div>
+    </div>
+{% endblock content %}

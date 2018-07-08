@@ -4,6 +4,15 @@
 .bg-custom {
     background-color: #231f1e
 }
+.mapa {
+    width:350px;
+    height:350px;
+}
+.centrar {
+    margin-left:auto;
+    margin-right:auto;
+}
+
 footer {
     position: fixed;
     left: 0;

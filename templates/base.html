@@ -23,12 +23,16 @@
 	</header>
 	
 	<body>
-		<div class="container pt-2">
+		<div class="container pt-2 mb-3">
 			{% block content %}
 			{% endblock content %}
 		</div>
 		<footer>
-			{% include "_footer.html" %}
+			<div class="row">
+				<div class="col-sm-12 bg-custom">
+					<p class="align-middle">Desarrollo Web 2017</p>
+				</div>
+			</div>
 		</footer>
 		<!-- Optional JavaScript -->
 		<!-- jQuery first, then Popper.js, then Bootstrap JS -->

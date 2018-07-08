@@ -2,16 +2,15 @@
 {% load static %}
 {% block content %}
     <div class="row">
-        <div class="col-sm-12">
+        <div class="col-sm-12 col-md-12">
             <img class="img-fluid" src="{% static 'placeholder.png' %}" alt="">
         </div>
-        <div class="col-sm-12">
+        <div class="col-sm-12 col-md-12 col.">
             <div class="text-left">
                 <h1 class="titulo">Contactos <small class="text-muted">ICINF</small></h1>
-                <img src="{% static 'gomen.png' %}" class="img-fluid img-index" alt="" >
             </div>
         </div>
-        <div class="col-sm-12">
+        <div class="col-sm-12 col-md-12">
             <div class="table-responsive pt-2">
                 <table class="table table-striped">
                     <thead>
@@ -30,21 +29,35 @@
                                 <td>Mark</td>
                                 <td>Otto</td>
                                 <td>@mdo</td>
-                                <td><button class="btn btn-primary"><i class="fa fa-eye"></i> Ver Detalle</button></td>
+                                <td><a href='{% url "detalles_contacto" %}' class="btn btn-primary"><i class="fa fa-eye"></i> Ver Detalle</a></td>
                             </tr>
                             <tr>
                                 <th scope="row">2</th>
                                 <td>Jacob</td>
                                 <td>Thornton</td>
                                 <td>@fat</td>
-                                <td><button class="btn btn-primary"><i class="fa fa-eye"></i> Ver Detalle</button></td>
+                                <td><a href='{% url "detalles_contacto" %}' class="btn btn-primary"><i class="fa fa-eye"></i> Ver Detalle</a></td>
                             </tr>
                             <tr>
                                 <th scope="row">3</th>
                                 <td>Larry</td>
                                 <td>the Bird</td>
                                 <td>@twitter</td>
-                                <td><button class="btn btn-primary"><i class="fa fa-eye"></i> Ver Detalle</button></td>
+                                <td><a href='{% url "detalles_contacto" %}' class="btn btn-primary"><i class="fa fa-eye"></i> Ver Detalle</a></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>Larry</td>
+                                <td>the Bird</td>
+                                <td>@twitter</td>
+                                <td><a href='{% url "detalles_contacto" %}' class="btn btn-primary"><i class="fa fa-eye"></i> Ver Detalle</a></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>Larry</td>
+                                <td>the Bird</td>
+                                <td>@twitter</td>
+                                <td><a href='{% url "detalles_contacto" %}' class="btn btn-primary"><i class="fa fa-eye"></i> Ver Detalle</a></td>
                             </tr>
                         </tbody>
                     </tbody>
