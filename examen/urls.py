@@ -21,6 +21,6 @@ from core.views import Index
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', Index,name="index"),
+    path('', include('core.urls'), name='core')
 
 ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

@@ -18,3 +18,10 @@ footer {
 .border-primary {
     border-color: #007bff !important;
 }
+
+.titulo {
+    font-size: 3rem;
+}
+small {
+    font-size: 2rem;
+}
